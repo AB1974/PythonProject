@@ -29,16 +29,16 @@ class Item:
     def __str__(self):  # instance method
         return f'{type(self).__name__} {self.__dict__}'
 
-    @staticmethod # can not interact with any instance or static variables
+    def instance_method(self):
+        print(f"f'This is an instance {self.item_name}method")
+
+    @staticmethod  # can not interact with any instance or static variables
     def static_method():
         print(f"This is a static method")
 
     @classmethod  # equivilent to static method of java: only accept static variables
     def class_method(cls):
         print(f"This is a class method: {cls.made_in}")
-
-
-
 
 
 item1 = Item("Pen", 2)
@@ -52,3 +52,20 @@ print(Item.tariffs)
 
 Item.class_method()
 Item.static_method()
+
+
+"""
+Create Employee class:
+    instance variables: employee_name, job_title, salary
+    static_variables: pay_tax
+    
+    instance methods: 
+        __init()__: declares and initalizes all the isnace variables
+        __str()__: creates string version of the object
+        work(): displaye  ${employee_name} is working
+        
+    class method:
+        display_employee_tax_rate()
+    
+
+"""
