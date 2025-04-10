@@ -20,7 +20,7 @@ reversed_str=s[::-1]
 print(reversed_str)
 
 s2="Aylin"
-reversed_s2=''.join(reversed(s2))
+reversed_s2 = ''.join(reversed(s2))
 print(reversed_s2)
 
 print("-----------compare 2 strings practice")

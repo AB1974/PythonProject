@@ -53,7 +53,6 @@ print(Item.tariffs)
 Item.class_method()
 Item.static_method()
 
-
 """
 Create Employee class:
     instance variables: employee_name, job_title, salary
