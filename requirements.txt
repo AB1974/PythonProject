@@ -1,0 +1,2 @@
+selenium >= 4.22.0
+pttest>=8.3.5
